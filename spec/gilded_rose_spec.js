@@ -48,17 +48,6 @@ describe("GildedRose shop manager", function () {
     });
   });
 
-  //Conjured Dark Blade", "Conjured Magic Stick"
-  it("La qualite d'un objet normal ne peut pas passer sous 0", function () {
-    listItems.push(new Item("Conjured Dark Blade", 5, -2));
-    listItems.push(new Item("Conjured Magic Stick", 6, -4));
-
-    const gildedRose = new Shop(listItems);
-    const items = gildedRose.updateShopQuality();
-
-    console.log(items);
-  });
-
   it("Augmenter la qualité de 1 pour Aged Brie et Backstage passes", function () {
     listItems.push(new AgedBrie("Aged Brie", 20, 30));
     listItems.push(
